@@ -20,7 +20,7 @@ public class CursoController {
     @Autowired
     private CursoRepository cursoRepository;
 
-    @GetMapping("/cursos")
+    @GetMapping
     public List<Curso> mostrarTodos() {
         return cursoRepository.selecionarTodos();
     }
